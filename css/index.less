@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+@font-face{
+    font-family: 'xf';
+    src: url('../font/DS-DIGIT.TTF');
+}
+html{
+    height: 100%;
+    background: url('../images/bg.jpg') no-repeat ;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+header{
+    height: 0.8rem;
+    width: 100%;
+    background: url('../images/head_bg.png') no-repeat ;
+    h1{
+        line-height: 0.8rem;
+        text-align: center;
+        color: #fff;
+        font-size: 0.3rem;
+    }
+    .showTime{
+        position: absolute;
+        top: 0;
+        right: 0.35rem;
+        line-height: 0.8rem;
+        color: rgba(255,255,255, 0.7);
+        font-size: 0.2rem;
+    }
+}
+.mainBox{
+    display: flex;
+    min-width: 1024px;
+    max-width: 1920px;
+    height: 300px;
+    margin: 0 auto;
+    padding: 0.1rem 0.1rem 0 0.1rem;
+    // background-color: pink;
+    .clounm{
+        flex:3;
+    }
+    .clounm:nth-child(2){
+        flex:5;
+        margin: 0 0.1rem 0.15rem;
+    }
+    .panel{
+        position: relative;
+        padding: 0 0.14rem 0.4rem;
+        border: 1px solid rgba(25,186,139, 0.17);
+        height: 2.65rem;
+        margin-bottom: 0.15rem;
+        background: url('../images/line.png') rgba(255,255,255, 0.1);
+        &::before{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 10px;
+            height: 10px;
+            border-top: 2px solid #02a6b5;
+            border-left: 2px solid #02a6b5;
+            content: '';
+        }
+        &::after{
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 10px;
+            height: 10px;
+            border-top: 2px solid #02a6b5;
+            border-right: 2px solid #02a6b5;
+            content: '';
+        }
+        .panel-footer{
+            position: absoulte;
+            width: 100%;
+            &::before{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 10px;
+                height: 10px;
+                border-bottom: 2px solid #02a6b5;
+                border-left: 2px solid #02a6b5;
+                content: '';
+            }
+            &::after{
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 10px;
+                height: 10px;
+                border-bottom: 2px solid #02a6b5;
+                border-right: 2px solid #02a6b5;
+                content: '';
+            }
+
+        }
+        h2{
+            height: 0.48rem;
+            line-height: 0.48rem;
+            text-align: center;
+            font-size: 0.2rem;
+            color: #fff;
+            a{
+                color: #fff;
+                text-decoration: none;
+                margin:0 0.1rem;
+            }
+        }
+        .charts{
+            height: 2rem;
+            // background-color: pink;
+        }
+    }
+    .no{
+        background-color: rgba(101,132,226,0.1);
+        padding: 0.15rem;
+        .no-bd{
+            position: relative;
+            border: 1px solid rgba(25,186,139,0.17);
+            ul{
+                display: flex;
+                li{
+                  position: relative;
+                  flex:1;
+                  height: 0.6rem;
+                  line-height: 0.6rem;
+                  font-size: 0.5rem;
+                  color: #fff;
+                  text-align: center;
+                  font-family: 'xf';
+                  &::after {
+                    position: absolute;
+                    top: 25%;
+                    right: 0;
+                    height: 50%;
+                    content: "";
+                    width: 1px;
+                    background-color: rgba(255,255,255,0.2);
+                  }
+                }
+                
+                  
+            }
+            &::before{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 30px;
+                height: 10px;
+                border-top: 2px solid #02a6b5;
+                border-left: 2px solid #02a6b5;
+                content: '';
+            }
+            &::after{
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 30px;
+                height: 10px;
+                border-bottom: 2px solid #02a6b5;
+                border-right: 2px solid #02a6b5;
+                content: '';
+            }
+        }
+        .no-bt{
+            ul{
+                display: flex;
+                li{
+                    flex:1;
+                    font-size: 0.18rem;
+                    text-align: center;
+                    height: 0.4rem;
+                    line-height: 0.4rem;
+                    color: rgba(255,255,255, 0.7);
+                    padding-top: 0.1rem;
+                }
+            }
+        }
+    }
+    .map{
+        position: relative;
+        height: 6.9rem;
+        width: 100%;
+        .map1{
+            position: absolute;
+            width: 5rem;
+            height: 5rem;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background: url('../images/map.png');
+            background-size: 100% 100%;
+            opacity: 0.2;
+        }
+        .map2{
+            position: absolute;
+            width: 6rem;
+            height: 6rem;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background: url('../images/lbx.png');
+            animation: rotate1 15s linear infinite;
+            background-size: 100% 100%;
+            opacity: 0.6;
+        }
+        .map3{
+            position: absolute;
+            width: 5.5rem;
+            height: 5.5rem;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background: url('../images/jt.png');
+            animation: rotate2 10s linear infinite;
+            background-size: 100% 100%;
+        }
+        .chart{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 6.9rem;
+            z-index: 999;
+        }
+        @keyframes rotate1 {
+            form {
+              transform: translate(-50%, -50%) rotate(0deg);
+            }
+            to {
+              transform: translate(-50%, -50%) rotate(360deg);
+            }
+          }
+          @keyframes rotate2 {
+            form {
+              transform: translate(-50%, -50%) rotate(0deg);
+            }
+            to {
+              transform: translate(-50%, -50%) rotate(-360deg);
+            }
+          }
+    }
+}

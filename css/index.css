@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+@font-face {
+  font-family: 'xf';
+  src: url('../font/DS-DIGIT.TTF');
+}
+html {
+  height: 100%;
+  background: url('../images/bg.jpg') no-repeat;
+  background-size: 100% 100%;
+  overflow: hidden;
+}
+header {
+  height: 0.8rem;
+  width: 100%;
+  background: url('../images/head_bg.png') no-repeat;
+}
+header h1 {
+  line-height: 0.8rem;
+  text-align: center;
+  color: #fff;
+  font-size: 0.3rem;
+}
+header .showTime {
+  position: absolute;
+  top: 0;
+  right: 0.35rem;
+  line-height: 0.8rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.2rem;
+}
+.mainBox {
+  display: flex;
+  min-width: 1024px;
+  max-width: 1920px;
+  height: 300px;
+  margin: 0 auto;
+  padding: 0.1rem 0.1rem 0 0.1rem;
+}
+.mainBox .clounm {
+  flex: 3;
+}
+.mainBox .clounm:nth-child(2) {
+  flex: 5;
+  margin: 0 0.1rem 0.15rem;
+}
+.mainBox .panel {
+  position: relative;
+  padding: 0 0.14rem 0.4rem;
+  border: 1px solid rgba(25, 186, 139, 0.17);
+  height: 2.65rem;
+  margin-bottom: 0.15rem;
+  background: url('../images/line.png') rgba(255, 255, 255, 0.1);
+}
+.mainBox .panel::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #02a6b5;
+  border-left: 2px solid #02a6b5;
+  content: '';
+}
+.mainBox .panel::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #02a6b5;
+  border-right: 2px solid #02a6b5;
+  content: '';
+}
+.mainBox .panel .panel-footer {
+  position: absoulte;
+  width: 100%;
+}
+.mainBox .panel .panel-footer::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid #02a6b5;
+  border-left: 2px solid #02a6b5;
+  content: '';
+}
+.mainBox .panel .panel-footer::after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid #02a6b5;
+  border-right: 2px solid #02a6b5;
+  content: '';
+}
+.mainBox .panel h2 {
+  height: 0.48rem;
+  line-height: 0.48rem;
+  text-align: center;
+  font-size: 0.2rem;
+  color: #fff;
+}
+.mainBox .panel h2 a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 0.1rem;
+}
+.mainBox .panel .charts {
+  height: 2rem;
+}
+.mainBox .no {
+  background-color: rgba(101, 132, 226, 0.1);
+  padding: 0.15rem;
+}
+.mainBox .no .no-bd {
+  position: relative;
+  border: 1px solid rgba(25, 186, 139, 0.17);
+}
+.mainBox .no .no-bd ul {
+  display: flex;
+}
+.mainBox .no .no-bd ul li {
+  position: relative;
+  flex: 1;
+  height: 0.6rem;
+  line-height: 0.6rem;
+  font-size: 0.5rem;
+  color: #fff;
+  text-align: center;
+  font-family: 'xf';
+}
+.mainBox .no .no-bd ul li::after {
+  position: absolute;
+  top: 25%;
+  right: 0;
+  height: 50%;
+  content: "";
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.mainBox .no .no-bd::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 10px;
+  border-top: 2px solid #02a6b5;
+  border-left: 2px solid #02a6b5;
+  content: '';
+}
+.mainBox .no .no-bd::after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 30px;
+  height: 10px;
+  border-bottom: 2px solid #02a6b5;
+  border-right: 2px solid #02a6b5;
+  content: '';
+}
+.mainBox .no .no-bt ul {
+  display: flex;
+}
+.mainBox .no .no-bt ul li {
+  flex: 1;
+  font-size: 0.18rem;
+  text-align: center;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  color: rgba(255, 255, 255, 0.7);
+  padding-top: 0.1rem;
+}
+.mainBox .map {
+  position: relative;
+  height: 6.9rem;
+  width: 100%;
+}
+.mainBox .map .map1 {
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url('../images/map.png');
+  background-size: 100% 100%;
+  opacity: 0.2;
+}
+.mainBox .map .map2 {
+  position: absolute;
+  width: 6rem;
+  height: 6rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url('../images/lbx.png');
+  animation: rotate1 15s linear infinite;
+  background-size: 100% 100%;
+  opacity: 0.6;
+}
+.mainBox .map .map3 {
+  position: absolute;
+  width: 5.5rem;
+  height: 5.5rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url('../images/jt.png');
+  animation: rotate2 10s linear infinite;
+  background-size: 100% 100%;
+}
+.mainBox .map .chart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6.9rem;
+  z-index: 999;
+}
+@keyframes rotate1 {
+  form {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@keyframes rotate2 {
+  form {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
